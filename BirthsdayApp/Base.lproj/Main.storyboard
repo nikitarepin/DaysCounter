@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirthsdayApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вместе навсегда!🩷" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW6-Dt-SJB">
+                                <rect key="frame" x="90.333333333333329" y="64" width="233.66666666666669" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="SQu-nS-47H"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="nsl-It-37k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="e0n-Tu-aNB">
+                                <rect key="frame" x="47" y="227" width="320" height="216"/>
+                                <connections>
+                                    <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="wgc-nb-hwa"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Когда мы начали встречаться?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PS-5g-grj">
+                                <rect key="frame" x="66.666666666666657" y="139" width="280.66666666666674" height="28"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udh-1T-46l">
+                                <rect key="frame" x="142" y="448" width="130" height="60"/>
+                                <color key="backgroundColor" red="0.86274516580000005" green="0.25098040700000002" blue="0.63921570780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="26A-vy-XJs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="OMC-hO-l93"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Результат">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resultButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEa-r3-2Is"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мы вместе ... дней" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwO-Yy-M8z">
+                                <rect key="frame" x="119.66666666666669" y="548" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iX0-c0-ZEz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.56091234869999995" green="0.58676442070000001" blue="0.84258943799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hW6-Dt-SJB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5g7-vL-l7Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dwO-Yy-M8z" secondAttribute="bottom" constant="30" id="7zk-rJ-Nbg"/>
+                            <constraint firstItem="hW6-Dt-SJB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="B0y-Ti-1P1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hW6-Dt-SJB" secondAttribute="trailing" constant="20" id="G4u-TF-HXB"/>
+                            <constraint firstItem="7PS-5g-grj" firstAttribute="top" secondItem="hW6-Dt-SJB" secondAttribute="bottom" constant="40" id="Kcz-gV-fSE"/>
+                            <constraint firstItem="udh-1T-46l" firstAttribute="top" secondItem="e0n-Tu-aNB" secondAttribute="bottom" constant="5" id="RL0-mF-Abg"/>
+                            <constraint firstItem="e0n-Tu-aNB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sdd-ER-WyT"/>
+                            <constraint firstItem="e0n-Tu-aNB" firstAttribute="top" secondItem="7PS-5g-grj" secondAttribute="bottom" constant="60" id="T8t-fI-ibq"/>
+                            <constraint firstItem="7PS-5g-grj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jzU-Ao-Ms4"/>
+                            <constraint firstItem="dwO-Yy-M8z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lMt-3M-Q5E"/>
+                            <constraint firstItem="udh-1T-46l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mOg-X0-YmU"/>
+                            <constraint firstItem="dwO-Yy-M8z" firstAttribute="top" secondItem="udh-1T-46l" secondAttribute="bottom" constant="40" id="qnS-jj-TVk"/>
+                            <constraint firstItem="hW6-Dt-SJB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20.329999999999998" id="w6s-1s-tgX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="dwO-Yy-M8z" id="v3j-zd-cxi"/>
+                        <outlet property="resultButton" destination="udh-1T-46l" id="Zod-HM-Zhl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+</document>
